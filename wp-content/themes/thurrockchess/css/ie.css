@@ -1,0 +1,6 @@
+/* 
+    Created on : 30-Dec-2014, 14:04:59
+    Author     : Rudi van Litsenborgh
+*/
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
