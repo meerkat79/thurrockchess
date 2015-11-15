@@ -51,16 +51,19 @@ body{
     font-family: sans-serif;
 }
 h1{
-    font-size: 45px;
-}
-h2{
     font-size: 30px;
 }
+h2{
+    font-size: 26px;
+}
 h3{
-    font-size: 28px;
+    font-size: 24px;
 }
 h4{
-    font-size: 25px;
+    font-size: 22px;
+}
+h5{
+    font-size: 20px;
 }
 /*End of Typography*/
 
@@ -233,16 +236,61 @@ body{
 .page-block{
     padding: 1em 0 1em 2em;
     min-height: 20em;
+    width: 1024px;
+    margin: auto;
+    background-color: rgba(84, 37, 25, 0.39);
 }
+
+.page-block a{
+    text-decoration: none;
+    color: #3D2015;
+}
+
+.page-block >h1{
+    font-size: 35px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.page-block .map{
+    width: 1024px;
+    margin-left: -2em;
+}
+
+.stanford, .grays{
+    margin-top: 1em;
+    text-align: left;
+}
+
+.stanford-info, .grays-info{
+    margin-top: 1em;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.intro{
+line-height: 1.5em;
+margin-bottom: 1em;
+}
+
 .post-block{
     padding: 1em 0 1em 2em;
     min-height: 20em;
 }
 
 .contact-block{
-    padding: 1em 0 1em 2em;
+    width: 1024px;
     min-height: 20em;
+    padding: 1em;
+    margin: auto;
 }
+.contact-block h2,p{
+    margin-bottom: 1em;
+}
+
+
 .each-post{
     min-height: 8em;
     margin: 1em auto 1em auto;
