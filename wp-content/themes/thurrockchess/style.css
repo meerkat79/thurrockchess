@@ -82,10 +82,13 @@ header{
 }
 
 footer{
-        background: rgba(186, 124, 81, 1);
+        width: 80%;
+        padding: 1em;
         color: #FFFFFF;
-        border-radius: 0 0 15px 15px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         min-height: 7em;
+        background-color: #3D2015;
         }
         
 #container{
@@ -102,11 +105,11 @@ footer{
 
 #sidebar{
     width: 100%;
-    min-height: 17em;
+    min-height: 35em;
 }
 .bar-content:nth-child(odd){
     float: left;
-    width: 18em;
+    width: 33%;
     height: 17em;
     background: #3D2015;
     color: #FBFCE0;
@@ -118,9 +121,9 @@ footer{
 
 .bar-content:nth-child(even){
     float: left;
-    width: 18em;
+    width: 33%;
     height: 17em;
-    margin: 0 0 0 1em;
+    margin: 0;
     background: #FBFCE0;
     color: #3D2015;
 }
@@ -133,8 +136,12 @@ footer{
     margin: 1em 0 1em 0;
 }
 
+.bar-content div{text-align: center
+}
+
 .bar-content ul{
     padding: 1em;
+    text-align: center;
 }
 
 #wp-calendar{
@@ -162,14 +169,21 @@ footer{
 
 
 /** 5.0 - Forms*/
+
+.bar-content form{
+	margin-left: 1em
+}
+
+
 /** 6.0 - Navigations*/
 
 nav {
-    width: 30%;
+    width: 50%;
     height: 4.55em;
     float: right;
     font-size: 0.8em;
-    text-align: left;    
+    text-align: right;
+    padding: 0 0.5em;
 }
 nav ul li{    
     display: inline-block;
@@ -195,19 +209,20 @@ nav ul li a{
 
 .left-nav{
     float: left;
-    width: 25%;
+    width: 50%;
     background: #FBFCE0;
     text-align: left;
+    padding: 0 2em;
 }
 .left-nav h1{
     font-size: 33px;
-    text-align: right;
+    text-align: left;
 }
 
 .left-nav h4{
     margin-top: -1em;
     font-size: 19px;
-    text-align: right;
+    text-align: left;
 }
 
 /**   6.1 - Links*/
@@ -234,11 +249,11 @@ body{
 }
 
 .page-block{
-    padding: 1em 0 1em 2em;
+    padding: 1em;
     min-height: 20em;
-    width: 1024px;
+    width: 65%;
     margin: auto;
-    background-color: rgba(84, 37, 25, 0.39);
+    background-color: rgba(203, 143, 96, 0.63);
 }
 
 .page-block a{
@@ -253,8 +268,7 @@ body{
 }
 
 .page-block .map{
-    width: 1024px;
-    margin-left: -2em;
+    width: 100%;
 }
 
 .stanford, .grays{
@@ -276,8 +290,13 @@ margin-bottom: 1em;
 }
 
 .post-block{
-    padding: 1em 0 1em 2em;
+    padding: 1em;
     min-height: 20em;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+    background-color: rgba(203, 143, 96, 0.63);
+    border-radius: 30px 0 30px 0;
 }
 
 .contact-block{
@@ -294,6 +313,20 @@ margin-bottom: 1em;
 .each-post{
     min-height: 8em;
     margin: 1em auto 1em auto;
+}
+
+.each-post h2{
+    text-align: center;
+}
+
+.each-post .stanford .map {
+    width: 60%;
+    margin: auto;
+}
+
+.each-post .grays .map {
+    width: 60%;
+    margin: auto;
 }
 
 
