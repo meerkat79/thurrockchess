@@ -5,6 +5,7 @@ Version: 1.0
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 @import url('css/bootstrap.css');
 /**
  * Table of Contents
@@ -39,11 +40,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *    15.6 - Desktop Large
  *    15.7 - Desktop X-Large
  */
-
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
-/*End of reset*/
 
 /** 2.0 - Genericons*/
 /** 3.0 - Typography*/
@@ -82,7 +78,7 @@ header{
 }
 
 footer{
-        width: 80%;
+        width: 100%;
         padding: 1em;
         color: #FFFFFF;
         border-top-left-radius: 10px;
@@ -104,13 +100,34 @@ footer{
 }
 
 #sidebar{
-    width: 100%;
+    width: 106.5%;
     min-height: 35em;
+}
+
+#sidebar label{
+    display: none;
+}
+
+#sidebar form input[type="text"]{
+    width: 90%;
+}
+
+#sidebar form input[type="submit"]{
+    float: left;
+    margin: 5% 0 0 5%;
+    width: 90%;    
+}
+
+#sidebar #calendar_wrap caption{
+    padding-bottom: 0;
+}
+.bar-content{
+    padding: 1%;
 }
 .bar-content:nth-child(odd){
     float: left;
-    width: 33%;
-    height: 17em;
+    width: 31.333333%;
+    height: 20em;
     background: #3D2015;
     color: #FBFCE0;
 }
@@ -121,8 +138,8 @@ footer{
 
 .bar-content:nth-child(even){
     float: left;
-    width: 33%;
-    height: 17em;
+    width: 31.333333%;
+    height: 20em;
     margin: 0;
     background: #FBFCE0;
     color: #3D2015;
@@ -133,7 +150,6 @@ footer{
 
 .widgettitle{
     text-align: center;
-    margin: 1em 0 1em 0;
 }
 
 .bar-content div{text-align: center
@@ -144,6 +160,9 @@ footer{
     text-align: center;
 }
 
+.bar-content ul li{
+    list-style: none;
+}
 #wp-calendar{
     width: 15em;
     margin: auto;
@@ -171,7 +190,7 @@ footer{
 /** 5.0 - Forms*/
 
 .bar-content form{
-	margin-left: 1em
+/* 	margin-left: 1em */
 }
 
 
@@ -206,6 +225,11 @@ nav ul li a{
     color: #3D2015;
 }
 
+nav a:hover{
+    text-decoration: none;
+    color: #31160d;
+}
+
 
 .left-nav{
     float: left;
@@ -215,12 +239,13 @@ nav ul li a{
     padding: 0 2em;
 }
 .left-nav h1{
+    margin-bottom: 0;
     font-size: 33px;
     text-align: left;
 }
 
 .left-nav h4{
-    margin-top: -1em;
+    margin-top: 0;
     font-size: 19px;
     text-align: left;
 }
@@ -329,22 +354,10 @@ margin-bottom: 1em;
     margin: auto;
 }
 
+/* 15. Responsive*/
 
-
-/**    12.1 - Posts and pages*/
-/**    12.2 - Post Formats*/
-/**    12.3 - Comments*/
-/** 13.0 - Footer*/
-/** 14.0 - Media*/
-/**    14.1 - Captions*/
-/**    14.2 - Galleries */
-/** 15.0 - Media Queries*/
-
-/**    15.1 - Mobile Large*/
-/**    15.2 - Tablet Small*/
-/**    15.3 - Tablet Large*/
-/**    15.4 - Desktop Small*/
-/**    15.5 - Desktop Medium*/
-/**    15.6 - Desktop Large*/
-/**    15.7 - Desktop X-Large*/
- 
+@media screen and (max-device-width: 1000px){
+    .page-block{
+        width: 100%;       
+    }
+}

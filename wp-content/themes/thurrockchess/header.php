@@ -5,8 +5,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width"> 
         
-    <title><?php bloginfo('title')?></title>        
-    
+    <title><?php bloginfo('title')?></title>
+
+
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
