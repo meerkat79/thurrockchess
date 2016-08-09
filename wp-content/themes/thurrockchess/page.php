@@ -2,11 +2,12 @@
 
 <?php get_header();  ?>
 
-<div class="page-block">
+<div class="row page-block">
     <?php while ( have_posts() ) : the_post(); ?>
         <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>        
         <?php the_content(); ?>
     <?php endwhile; ?>
-</div>
+
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

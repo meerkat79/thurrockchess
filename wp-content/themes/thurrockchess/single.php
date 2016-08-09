@@ -2,6 +2,8 @@
 
 <?php get_header();  ?>
 
+<div class="row page-block">
+
 <?php get_sidebar(); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
@@ -10,5 +12,5 @@
     <?php endwhile; ?>
         
         <?php comments_template('', true); ?>
-
+</div>
 <?php get_footer(); ?>

@@ -78,20 +78,19 @@ header{
 }
 
 footer{
-        width: 100%;
+        width: 80%;
         padding: 1em;
         color: #FFFFFF;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
         min-height: 7em;
         background-color: #3D2015;
         }
         
 #container{
     display: inline;
-    background: #FFFFFF;
+    background: #af4141;
     overflow: auto;
     margin-top: 1em;
+    color: #3D2015;
     }
 
 #container div h2 a{
@@ -123,6 +122,7 @@ footer{
 }
 .bar-content{
     padding: 1%;
+    border: 1px solid #3D2015;
 }
 .bar-content:nth-child(odd){
     float: left;
@@ -270,13 +270,13 @@ header img {
 /** 11.0 - Widgets*/
 /** 12.0 - Content*/
 body{
-    background-color: #FBFCE0;
+    background-color: #fbfce0;
 }
 
 .page-block{
     padding: 1em;
     min-height: 20em;
-    width: 65%;
+    width: 80%;
     margin: auto;
     background-color: rgba(203, 143, 96, 0.63);
 }
@@ -294,6 +294,11 @@ body{
 
 .page-block .map{
     width: 100%;
+}
+
+.stand-alone-pages{
+    width: 80%;
+    margin:  auto;
 }
 
 .stanford, .grays{

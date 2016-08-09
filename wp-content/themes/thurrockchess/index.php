@@ -8,6 +8,6 @@
 	        <?php the_content(); ?></div>
 
     <?php endwhile; ?>
-</div>
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>
