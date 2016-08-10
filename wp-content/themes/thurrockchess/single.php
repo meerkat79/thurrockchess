@@ -1,5 +1,3 @@
-<!--This page is for single posts only-->
-
 <?php get_header();  ?>
 
 <div class="row page-block">

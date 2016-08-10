@@ -111,11 +111,25 @@ footer{
     width: 90%;
 }
 
+input#searchsubmit{
+    background-image: url('img/squares-gloss.png');    
+}
+
+input#searchsubmit:hover{
+    border:  2px solid pink;
+}
+
 #sidebar form input[type="submit"]{
     float: left;
     margin: 5% 0 0 5%;
-    width: 90%;    
+    width: 90%;
+    color: #dcb78e;
+    background-color: #fbfce0;
+    outline: none;
+    border: 1px solid #dcb78e;
 }
+
+input#searchsubmit {}
 
 #sidebar #calendar_wrap caption{
     padding-bottom: 0;
@@ -204,12 +218,13 @@ nav {
     text-align: right;
     padding: 0 0.5em;
 }
-nav ul li{    
+nav ul li{
     display: inline-block;
     padding: 1em 1.5em;
     margin-right: -0.4em;
     border-left: 1px dotted #9A422E;
     border-top: 0.4em solid #FBFCE0;
+    font-weight: 700;
 }
 nav ul li:last-child{
     border-right: 1px dotted #9A422E;
@@ -294,6 +309,14 @@ body{
 
 .page-block .map{
     width: 100%;
+}
+
+.page-block .vid-container{
+    text-align: center;
+}
+
+.ytp-youtube-button .ytp-button .yt-uix-sessionlink{
+    display: none!important;
 }
 
 .stand-alone-pages{
