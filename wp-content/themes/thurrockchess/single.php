@@ -1,6 +1,6 @@
 <?php get_header();  ?>
 
-<div class="row page-block">
+<div class="col-md-12 page-block check3">
 
 <?php get_sidebar(); ?>
 

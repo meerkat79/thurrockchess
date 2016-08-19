@@ -1,6 +1,6 @@
 <?php get_header();  ?>
 
-<div class="row page-block">
+<div class="col-md-12 check2 page-block">
     <?php while ( have_posts() ) : the_post(); ?>      
         <?php the_content(); ?>
     <?php endwhile; ?>

@@ -6,386 +6,392 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+
+/* Bootstrap*/
+
 @import url('css/bootstrap.css');
-/**
- * Table of Contents
- *
- * 1.0 - Reset
- * 2.0 - Genericons
- * 3.0 - Typography
- * 4.0 - Elements
- * 5.0 - Forms
- * 6.0 - Navigations
- *   6.1 - Links
- *   6.2 - Menus
- * 7.0 - Accessibility
- * 8.0 - Alignments
- * 9.0 - Clearings
- * 10.0 - Header
- * 11.0 - Widgets
- * 12.0 - Content
- *    12.1 - Posts and pages
- *    12.2 - Post Formats
- *    12.3 - Comments
- * 13.0 - Footer
- * 14.0 - Media
- *    14.1 - Captions
- *    14.2 - Galleries
- * 15.0 - Media Queries
- *    15.1 - Mobile Large
- *    15.2 - Tablet Small
- *    15.3 - Tablet Large
- *    15.4 - Desktop Small
- *    15.5 - Desktop Medium
- *    15.6 - Desktop Large
- *    15.7 - Desktop X-Large
- */
 
-/** 2.0 - Genericons*/
-/** 3.0 - Typography*/
-body{
-    font-family: sans-serif;
-}
-h1{
-    font-size: 30px;
-}
-h2{
-    font-size: 26px;
-}
-h3{
-    font-size: 24px;
-}
-h4{
-    font-size: 22px;
-}
-h5{
-    font-size: 20px;
-}
-/*End of Typography*/
+/*Custom styles*/
 
-/** 4.0 - Elements*/
-header{
-    width: 100%;
-    height: 24em;
-    margin: 0 auto;
-    line-height: 2;
+body {
+    font-family: sans-serif
+}
+
+h1 {
+    font-size: 30px
+}
+
+h2 {
+    font-size: 26px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 22px
+}
+
+h5 {
+    font-size: 20px
+}
+
+.container {
+    width: 1366px
+}
+header {
     font-size: 1.5em;
     text-align: center;
-    background: #FBFCE0;
-}
-#container, footer{        
-    margin: 0 auto;    
+    background: #FBFCE0
 }
 
-footer{
-        width: 80%;
-        padding: 1em;
-        color: #FFFFFF;
-        min-height: 7em;
-        background-color: #3D2015;
-        }
-        
-#container{
-    display: inline;
-    background: #af4141;
-    overflow: auto;
-    margin-top: 1em;
-    color: #3D2015;
-    }
+nav {
+    text-align: right;
+    font-size: 0.8em;
+    background-clip: padding-box;
+}
 
-#container div h2 a{
+.nav-container {
+    min-height: 95px;
+    margin-top: 5px;
+    background-color: rgba(203, 143, 96, 0.39)
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1em 1.5em;
+    margin-right: -0.4em;
+    border-top: 3px solid rgba(203, 143, 96, 0);
+    border-left: 1px dotted #9A422E;
+    font-weight: 700
+}
+
+nav ul li:last-child {
+    border-right: 1px dotted #9A422E
+}
+
+nav ul li:hover {
+    border-top: 0.2em solid #32150C;
+    border-bottom: 0.2em solid #32150C
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #3D2015
 }
 
-#sidebar{
-    width: 106.5%;
-    min-height: 42em;
+nav a:hover {
+    text-decoration: none;
+    color: #31160d
 }
 
-#sidebar label{
-    display: none;
+.sub-nav-area {
+    margin-bottom: 20px;
+    background-color: rgba(203, 143, 96, 0.39)
 }
 
-#sidebar form input[type="text"]{
-    width: 90%;
+#menu-menu-1 {
+    padding: 0
 }
 
-input#searchsubmit{
-    background-image: url('img/squares-gloss.png');    
+footer {
+    min-height: 3em;
+    padding: 1em;
+    color: #FFFFFF;
+    background-color: #3D2015
 }
 
-input#searchsubmit:hover{
-    border:  2px solid pink;
+.menu-menu-1-container {
+    margin-top: 20px
 }
 
-#sidebar form input[type="submit"]{
+input[type="text"] {
+    color: #3d2015
+}
+
+input:active,
+input:focus {
+    outline: none
+}
+
+input#searchsubmit {
+    width: 63%;
+    margin-top: 5px;
+    background-image: url('img/squares-gloss.png')
+}
+
+input#searchsubmit:hover {
+    border: 2px solid #dcb78e
+}
+
+#sidebar form input[type="submit"] {
     float: left;
     margin: 5% 0 0 5%;
     width: 90%;
     color: #dcb78e;
     background-color: #fbfce0;
     outline: none;
-    border: 1px solid #dcb78e;
+    border: 1px solid #dcb78e
 }
 
-input#searchsubmit {}
-
-#sidebar #calendar_wrap caption{
-    padding-bottom: 0;
+#sidebar #calendar_wrap caption {
+    padding-bottom: 0
 }
-.bar-content{
+
+.bar-content {
     padding: 1%;
     border: 1px solid #3D2015;
 }
-.bar-content:nth-child(odd){
-    float: left;
-    width: 31.333333%;
+
+.bar-content:nth-child(odd) {
     height: 20em;
     background: #3D2015;
-    color: #FBFCE0;
+    color: #FBFCE0
 }
 
-.bar-content:nth-child(odd) a{
-    color: white;
+.bar-content:nth-child(odd) a {
+    color: white
 }
 
-.bar-content:nth-child(even){
-    float: left;
-    width: 31.333333%;
+.bar-content:nth-child(even) {
     height: 20em;
     margin: 0;
     background: #FBFCE0;
-    color: #3D2015;
-}
-.bar-content:nth-child(even) a{
-    color: black;
+    color: #3D2015
 }
 
-.widgettitle{
-    text-align: center;
+.bar-content:nth-child(even) a {
+    color: black
 }
 
-.bar-content div{text-align: center
+.widgettitle {
+    text-align: center
 }
 
-.bar-content ul{
+.bar-content div {
+    text-align: center
+}
+
+.bar-content ul {
     padding: 1em;
-    text-align: center;
+    text-align: center
 }
 
-.bar-content ul li{
-    list-style: none;
+.bar-content ul li {
+    list-style: none
 }
-#wp-calendar{
+
+#wp-calendar {
     width: 15em;
     margin: auto;
     text-align: center;
-    font-size: 1em;
+    font-size: 1em
 }
 
-#wp-calendar caption{
-    margin: 0 0 1em 0;
+#wp-calendar caption {
+    margin: 0 0 1em 0
 }
 
-#prev{
-    padding: 1em 0 0 0;
-}
+#prev {
+    padding: 1em 0 0 0
 }
 
-.breadcrumb{
+.breadcrumb {
     padding: 8px 15px!important;
     list-style: none!important;
-    font-size: 1.8em!important;
+    font-size: 1.5em;
+    margin-top: 1em;
 }
 
-
-
-/** 5.0 - Forms*/
-
-.bar-content form{
-/* 	margin-left: 1em */
+.breadcrumb a {
+    color: #3d2015
 }
 
-
-/** 6.0 - Navigations*/
-
-nav {
-    width: 50%;
-    height: 4.55em;
-    float: right;
-    font-size: 0.8em;
-    text-align: right;
-    padding: 0 0.5em;
-}
-nav ul li{
-    display: inline-block;
-    padding: 1em 1.5em;
-    margin-right: -0.4em;
-    border-left: 1px dotted #9A422E;
-    border-top: 0.4em solid #FBFCE0;
-    font-weight: 700;
-}
-nav ul li:last-child{
-    border-right: 1px dotted #9A422E;
+.breadcrumb a:hover {
+    color: #dcb78e
 }
 
-nav ul li:hover{
-   border-top: 0.2em solid #32150C;
-   border-bottom: 0.2em solid #32150C;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: #3D2015;
-}
-
-nav a:hover{
-    text-decoration: none;
-    color: #31160d;
-}
-
-
-.left-nav{
+.left-nav {
     float: left;
     width: 50%;
     background: #FBFCE0;
     text-align: left;
-    padding: 0 2em;
+    padding: 0 2em
 }
-.left-nav h1{
+
+.left-nav h1 {
     margin-bottom: 0;
     font-size: 33px;
-    text-align: left;
+    text-align: left
 }
 
-.left-nav h4{
+.left-nav h4 {
     margin-top: 0;
     font-size: 19px;
-    text-align: left;
+    text-align: left
 }
 
-/**   6.1 - Links*/
-/**   6.2 - Menus*/
-/**   6.2 - Menus*/
-/** 7.0 - Accessibility*/
-/** 8.0 - Alignments*/
-/** 9.0 - Clearings*/
-/** 10.0 - Header*/
-header h1 a{
+header h1 a {
     text-decoration: none;
-    color: #3D2015;
+    color: #010000
+}
+
+header h1,
+h2,
+h3,
+h4 {
+    color: #010000
 }
 
 header img {
     width: 100%;
-    height: 19em;
+    height: 19em
 }
 
-/** 11.0 - Widgets*/
-/** 12.0 - Content*/
-body{
-    background-color: #fbfce0;
+body {
+    background-color: #fbfce0
 }
 
-.page-block{
+.page-block {
     padding: 1em;
-    min-height: 20em;
-    width: 80%;
     margin: auto;
-    background-color: rgba(203, 143, 96, 0.63);
+    background-color: rgba(203, 143, 96, 0.63)
 }
 
-.page-block a{
+.page-block a {
     text-decoration: none;
-    color: #3D2015;
+    color: #3D2015
 }
 
-.page-block >h1{
+.page-block >h1 {
     font-size: 35px;
     margin-bottom: 1em;
-    text-align: center;
+    text-align: center
 }
 
-.page-block .map{
-    width: 100%;
+.page-block .vid-container {
+    text-align: center
 }
 
-.page-block .vid-container{
-    text-align: center;
-}
-
-.ytp-youtube-button .ytp-button .yt-uix-sessionlink{
-    display: none!important;
-}
-
-.stand-alone-pages{
+.page-block .vid-container iframe {
     width: 80%;
-    margin:  auto;
+    margin-bottom: 3em
 }
 
-.stanford, .grays{
+.ytp-youtube-button .ytp-button .yt-uix-sessionlink {
+    display: none!important
+}
+
+.stand-alone-pages {
+    margin: auto
+}
+
+.stanford,
+.grays {
     margin-top: 1em;
-    text-align: left;
+    text-align: center
 }
 
-.stanford-info, .grays-info{
-    margin-top: 1em;
+.stanford-info,
+.grays-info {
+    margin-top: 1em
 }
 
-.full-width{
-    width: 100%;
+.intro {
+    line-height: 1.5em;
+    margin-bottom: 1em
 }
 
-.intro{
-line-height: 1.5em;
-margin-bottom: 1em;
-}
-
-.post-block{
-    padding: 1em;
-    min-height: 20em;
-    width: 80%;
+.post-block {
     margin: auto;
     margin-bottom: 1em;
     background-color: rgba(203, 143, 96, 0.63);
-    border-radius: 30px 0 30px 0;
+    border-radius: 30px 0 30px 0
 }
 
-.contact-block{
-    width: 1024px;
-    min-height: 20em;
+.contact-block {
     padding: 1em;
     margin: auto;
-}
-.contact-block h2,p{
-    margin-bottom: 1em;
+    background-color: rgba(203, 143, 96, 0.63)
 }
 
+.contact-block h2,
+p {
+    margin-bottom: 1em
+}
 
-.each-post{
+.each-post {
     min-height: 8em;
-    margin: 1em auto 1em auto;
+    margin: 1em auto 1em auto
 }
 
-.each-post h2{
-    text-align: center;
+.contact-block h2 {
+    text-align: center
 }
 
-.each-post .stanford .map {
-    width: 60%;
-    margin: auto;
+.contact-block .map iframe {
+    width: 80%
+}
+
+.contact-block .stanford .map {
+    margin: auto
 }
 
 .each-post .grays .map {
-    width: 60%;
-    margin: auto;
+    margin: auto
 }
 
-/* 15. Responsive*/
+.stand-right {
+    text-align: right
+}
 
-@media screen and (max-device-width: 1000px){
-    .page-block{
-        width: 100%;       
+.stand-center {
+    text-align: center
+}
+
+.stand-left {
+    text-align: left
+}
+
+@media screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1699px) {
+    .nav-container {
+        float: none;
+        width: 80%;
+        margin: 5px auto 0 auto;
+        border-radius: 10px;
+        background-color: rgba(203, 143, 96, 0.39)        
+    }    
+}
+
+@media screen 
+  and (min-device-width: 1700px) {
+    .nav-container {
+        float: none;
+        width: 65%;
+        margin: 5px auto 0 auto;
+        border-radius: 10px;        
+        background-color: rgba(203, 143, 96, 0.39)        
+    }
+  }
+
+@media screen and (max-device-width: 992px) {
+    .container {
+        width: 992px
+    }
+    .nav-container {
+        min-height: 160px;
+        margin: 5px auto 0 auto        
+    }
+    .menu-menu-1-container {
+        margin-top: 0
+    }
+}
+
+@media screen and (max-device-width: 640px) {
+    .container {
+        width: 640px
     }
 }

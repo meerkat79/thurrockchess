@@ -22,18 +22,23 @@
         
 	<?php wp_head() ?>
 </head>
-<header>
-    <div class="left-nav">
-        <h1><a href="<?php echo home_url('/') ?>"><?php bloginfo('name')?></a></h1>
-        <h4 class="header-fix"><?php bloginfo('description'); ?> </h4>
-    </div>
-    
-    <nav>
-        <?php wp_nav_menu(); ?>
-    </nav>
-    <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-    
-</header>
 
-<body <?php body_class(); ?> class="container">
-    <div id="container">
+<body class="container" <?php body_class(); ?> >
+
+    <header class="row">
+        <nav class="col-md-12 col-sm-12 col-xs-12 navbar navbar-fixed-top">
+            <div class="nav-container">
+                <div class="col-md-6 col-sm-12 col-xs-12 stand-center">
+                    <h1><a href="<?php echo home_url('/') ?>"><?php bloginfo('name')?></a></h1>
+                    <h4><?php bloginfo('description'); ?> </h4>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 stand-center"><?php wp_nav_menu(); ?></div>               
+            </div>
+        </nav> 
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12 sub-nav-area"><img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /></div>
+    </header>
+
+
+    <section class="row">

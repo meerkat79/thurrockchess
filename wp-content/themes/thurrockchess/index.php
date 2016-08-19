@@ -1,6 +1,6 @@
 <?php get_header();  ?>
 
-<div class="post-block">
+<div class="col-md-12 check1 page-block">
 	    <?php while ( have_posts() ) : the_post(); ?>
 	    <div class="each-post"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	    <p>
