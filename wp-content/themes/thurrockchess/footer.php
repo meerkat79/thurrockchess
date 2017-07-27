@@ -5,7 +5,7 @@
 
 		<footer class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12"><?php wp_nav_menu(); ?></div>
-			<div class="col-md-12 col-sm-12 col-xs-12">Copyright <?=date('Y')?>: <a href="http://www.webpartner.co">WebPartner</a></div>
+			<div class="col-md-12 col-sm-12 col-xs-12">Copyright <?=date('Y')?>: <a href="http://www.irudi.me">irudi</a></div>
 		</footer>
 
 	<script>
